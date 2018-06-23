@@ -1,0 +1,16 @@
+{
+  "name": "genCo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ben Ellentuck <ellentuckben@gmail.com> (https://github.com/bellentuck)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.2.0"
+  }
+}
