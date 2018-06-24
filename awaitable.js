@@ -56,12 +56,15 @@ const awaitable = promise => {
   function doNext(data) {
     let { value, done } = iter.next(data)
     if (!done) {
-      console.log('GOT HERE', value.isPending())
+      //console.log('GOT HERE', value.isPending())
       while (value.isPending()) {
         //value.then(doNext)
         console.log('GOT HERE', value.isPending())
-        value = waitForPromiseToResolve(value)
-        console.log('VALUE: ', value)
+        // value = waitForPromiseToResolve(value)
+        // console.log('VALUE: ', value)
+        // process.nextTick(() => {
+        //   console.log('next tick cb', value.isPending())
+        // })
         continue
       }
       console.log('GOT HERE????')
