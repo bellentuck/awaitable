@@ -37,6 +37,8 @@ function MakeQueriablePromise(promise) {
 
 const waitForPromiseToResolve = require('./waitForPromiseToResolve');
 
+
+
 const awaitable = promise => {
 
   const queriablePromise = MakeQueriablePromise(promise);
@@ -77,6 +79,7 @@ const awaitable = promise => {
 }
 
 module.exports = awaitable
+
 
 
 function sleep(miliseconds, promise) {
